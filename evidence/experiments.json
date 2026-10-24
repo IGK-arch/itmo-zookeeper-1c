@@ -1,0 +1,106 @@
+[
+  {
+    "run": "unsafe-20261024T182821",
+    "fencing": false,
+    "zk_root": "/lab4/unsafe-20261024T182821",
+    "pause_time_utc": "2026-10-24T18:28:25.662+00:00",
+    "suspend_requested_ns": 98872449196600,
+    "suspended_ns": 98872449262100,
+    "suspended_worker_pid": 17480,
+    "launcher_pid": 46756,
+    "leader_B_ns": 98884025519100,
+    "resumed_ns": 98912643115300,
+    "failover_seconds": 11.576257,
+    "pause_seconds": 40.1938532,
+    "restored_rows": 20000,
+    "restored_unique_pairs": 5800,
+    "accepted_publications": 2,
+    "rejected_publications": 0,
+    "pointer_version": 2,
+    "pointer": {
+      "coordinator": "A",
+      "epoch": 1,
+      "key": "lab4/unsafe-20261024T182821/results/epoch-1-A-skills_2.csv",
+      "sha256": "395e69c74e4515b36b765932f41aef0c5767d04ce67cc7646068a535bbc47b15",
+      "rows": 229388,
+      "selected": 18164,
+      "emissions": 214983,
+      "unique_pairs": 28430
+    },
+    "computed": [
+      {
+        "coordinator": "A",
+        "epoch": 1,
+        "rows": 229388,
+        "selected": 18164,
+        "emissions": 214983,
+        "unique_pairs": 28430,
+        "sha256": "395e69c74e4515b36b765932f41aef0c5767d04ce67cc7646068a535bbc47b15"
+      },
+      {
+        "coordinator": "B",
+        "epoch": 2,
+        "rows": 229388,
+        "selected": 18164,
+        "emissions": 214983,
+        "unique_pairs": 28430,
+        "sha256": "395e69c74e4515b36b765932f41aef0c5767d04ce67cc7646068a535bbc47b15"
+      }
+    ],
+    "s3_readback_matches_lab3": true,
+    "session_timeout_ms": 10000,
+    "batch_delay_seconds": 0.03
+  },
+  {
+    "run": "fenced-20261024T182954",
+    "fencing": true,
+    "zk_root": "/lab4/fenced-20261024T182954",
+    "pause_time_utc": "2026-10-24T18:29:59.186+00:00",
+    "suspend_requested_ns": 98965973728900,
+    "suspended_ns": 98965973817300,
+    "suspended_worker_pid": 37620,
+    "launcher_pid": 53496,
+    "leader_B_ns": 98976008676100,
+    "resumed_ns": 99006059104400,
+    "failover_seconds": 10.0348588,
+    "pause_seconds": 40.0852871,
+    "restored_rows": 20000,
+    "restored_unique_pairs": 5800,
+    "accepted_publications": 1,
+    "rejected_publications": 1,
+    "pointer_version": 1,
+    "pointer": {
+      "coordinator": "B",
+      "epoch": 2,
+      "key": "lab4/fenced-20261024T182954/results/epoch-2-B-skills_2.csv",
+      "sha256": "395e69c74e4515b36b765932f41aef0c5767d04ce67cc7646068a535bbc47b15",
+      "rows": 229388,
+      "selected": 18164,
+      "emissions": 214983,
+      "unique_pairs": 28430
+    },
+    "computed": [
+      {
+        "coordinator": "A",
+        "epoch": 1,
+        "rows": 229388,
+        "selected": 18164,
+        "emissions": 214983,
+        "unique_pairs": 28430,
+        "sha256": "395e69c74e4515b36b765932f41aef0c5767d04ce67cc7646068a535bbc47b15"
+      },
+      {
+        "coordinator": "B",
+        "epoch": 2,
+        "rows": 229388,
+        "selected": 18164,
+        "emissions": 214983,
+        "unique_pairs": 28430,
+        "sha256": "395e69c74e4515b36b765932f41aef0c5767d04ce67cc7646068a535bbc47b15"
+      }
+    ],
+    "s3_readback_matches_lab3": true,
+    "session_timeout_ms": 10000,
+    "batch_delay_seconds": 0.03
+  }
+]

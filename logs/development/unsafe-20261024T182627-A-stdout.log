@@ -1,0 +1,19 @@
+2026-10-24T18:26:28.626+00:00 [A] Состояние сессии: CONNECTED | {"state":"CONNECTED"}2026-10-24T18:26:28.627+00:00 [A] Координатор запущен | {"fencing":false,"requested_session_timeout_ms":10000,"negotiated_session_timeout_ms":10000,"session_id":"0x10005e20fcf0005"}
+
+2026-10-24T18:26:28.628+00:00 [A] Ожидаю лидерство
+2026-10-24T18:26:28.648+00:00 [A] Стал лидером | {"epoch":1,"epoch_version":1}
+2026-10-24T18:26:28.659+00:00 [A] Начинаю расчёт с первой строки
+2026-10-24T18:26:29.756+00:00 [A] Состояние сессии: LOST | {"state":"LOST"}
+Traceback (most recent call last):
+  File "E:\projects\Инженерия данных\lab4-zookeeper\scripts\run_coordinator.py", line 5, in <module>
+    runpy.run_module('coordinator', run_name='__main__')
+  File "<frozen runpy>", line 229, in run_module
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\projects\Инженерия данных\lab4-zookeeper\src\coordinator.py", line 186, in <module>
+    run(arguments)
+  File "E:\projects\Инженерия данных\lab4-zookeeper\src\coordinator.py", line 132, in run
+    checked_pointer_write(zk, root + '/epoch', token, root + '/checkpoint', pointer)
+  File "E:\projects\Инженерия данных\lab4-zookeeper\src\coordinator.py", line 27, in checked_pointer_write
+    result = zk.transaction().check(epoch_path, version=epoch_version).set_data(pointer_path, data).commit()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'set_data'

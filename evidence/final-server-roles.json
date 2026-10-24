@@ -1,0 +1,14 @@
+{
+  "1": {
+    "role": "follower",
+    "srvr": "Zookeeper version: 3.9.6-a355171b081b5b60749db8f19cca1528b0df936f, built on 2026-09-03 19:29 UTC\r\nLatency min/avg/max: 3/6.0/8\nReceived: 8\nSent: 7\nConnections: 1\nOutstanding: 0\nZxid: 0x40000000c\nMode: follower\nNode count: 28\r\n"
+  },
+  "2": {
+    "role": "follower",
+    "srvr": "Zookeeper version: 3.9.6-a355171b081b5b60749db8f19cca1528b0df936f, built on 2026-09-03 19:29 UTC\r\nLatency min/avg/max: 0/1.0349/10\nReceived: 91\nSent: 90\nConnections: 1\nOutstanding: 0\nZxid: 0x40000000c\nMode: follower\nNode count: 28\r\n"
+  },
+  "3": {
+    "role": "leader",
+    "srvr": "Zookeeper version: 3.9.6-a355171b081b5b60749db8f19cca1528b0df936f, built on 2026-09-03 19:29 UTC\r\nLatency min/avg/max: 0/0.0/0\nReceived: 5\nSent: 4\nConnections: 1\nOutstanding: 0\nZxid: 0x40000000c\nMode: leader\nNode count: 28\r\nProposal sizes last/min/max: 48/48/127\r\n"
+  }
+}

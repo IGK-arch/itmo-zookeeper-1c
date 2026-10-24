@@ -1,0 +1,7 @@
+{
+  "stale_rejected_before_B_publication": true,
+  "stale_rejected_after_B_publication": true,
+  "receiver_value": "B",
+  "receiver_version": 1,
+  "actual_server_exception": "BadVersionError"
+}

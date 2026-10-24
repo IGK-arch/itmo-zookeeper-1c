@@ -1,0 +1,9 @@
+2026-10-24T18:26:59.229+00:00 [B] Координатор запущен | {"fencing":false,"requested_session_timeout_ms":10000,"negotiated_session_timeout_ms":10000,"session_id":"0x10005e20fcf0007"}
+2026-10-24T18:26:59.229+00:00 [B] Состояние сессии: CONNECTED | {"state":"CONNECTED"}
+2026-10-24T18:26:59.231+00:00 [B] Ожидаю лидерство
+2026-10-24T18:27:27.538+00:00 [B] Стал лидером | {"epoch":2,"epoch_version":2}
+2026-10-24T18:27:27.665+00:00 [B] Восстановлен чекпоинт | {"rows":220000,"selected":17277,"unique_pairs":27373,"emissions":201930,"checkpoint_epoch":1}
+2026-10-24T18:27:47.171+00:00 [B] Расчёт совпал с ДЗ 3 | {"coordinator":"B","epoch":2,"key":"lab4/unsafe-20261024T182655/results/epoch-2-B-skills_2.csv","sha256":"395e69c74e4515b36b765932f41aef0c5767d04ce67cc7646068a535bbc47b15","rows":229388,"selected":18164,"emissions":214983,"unique_pairs":28430}
+2026-10-24T18:27:47.180+00:00 [B] записал результат | {"pointer_version":2,"epoch":2,"sha256":"395e69c74e4515b36b765932f41aef0c5767d04ce67cc7646068a535bbc47b15","fencing":false}
+2026-10-24T18:27:47.181+00:00 [B] Работа завершена
+2026-10-24T18:27:47.196+00:00 [B] Состояние сессии: LOST | {"state":"LOST"}

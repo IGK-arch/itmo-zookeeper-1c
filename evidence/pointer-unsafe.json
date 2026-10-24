@@ -1,0 +1,14 @@
+{
+  "path": "/lab4/unsafe-20261024T182821/result",
+  "dataVersion": 2,
+  "pointer": {
+    "coordinator": "A",
+    "epoch": 1,
+    "key": "lab4/unsafe-20261024T182821/results/epoch-1-A-skills_2.csv",
+    "sha256": "395e69c74e4515b36b765932f41aef0c5767d04ce67cc7646068a535bbc47b15",
+    "rows": 229388,
+    "selected": 18164,
+    "emissions": 214983,
+    "unique_pairs": 28430
+  }
+}

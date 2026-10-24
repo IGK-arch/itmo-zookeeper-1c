@@ -1,0 +1,9 @@
+{
+  "path": "/lab4-ephemeral-20261024183331",
+  "ephemeral_owner": "0x20005e957750002",
+  "present_before": true,
+  "present_after": false,
+  "checked_after_seconds": 0.15346519999729935,
+  "owner_exit_code": 0,
+  "close_method": "zkCli quit: normal client session close"
+}

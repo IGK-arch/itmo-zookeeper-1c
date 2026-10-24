@@ -1,0 +1,82 @@
+[
+  {
+    "page": "roles",
+    "file": "01-roles.jpg",
+    "height": 692.2000122070312,
+    "pageHeight": 960,
+    "viewportWidth": 1706,
+    "width": 990.0000610351562,
+    "x": 358.3333435058594,
+    "y": 18
+  },
+  {
+    "page": "quorum",
+    "file": "02-quorum.jpg",
+    "height": 862.300048828125,
+    "pageHeight": 960,
+    "viewportWidth": 1706,
+    "width": 990.0000610351562,
+    "x": 358.3333435058594,
+    "y": 18
+  },
+  {
+    "page": "ephemeral",
+    "file": "03-ephemeral.jpg",
+    "height": 473.5000305175781,
+    "pageHeight": 960,
+    "viewportWidth": 1706,
+    "width": 990.0000610351562,
+    "x": 358.3333435058594,
+    "y": 18
+  },
+  {
+    "page": "unsafe",
+    "file": "04-unsafe.jpg",
+    "height": 546.4000244140625,
+    "pageHeight": 960,
+    "viewportWidth": 1706,
+    "width": 990.0000610351562,
+    "x": 358.3333435058594,
+    "y": 18
+  },
+  {
+    "page": "unsafe-pointer",
+    "file": "05-unsafe-pointer.jpg",
+    "height": 570.7000122070312,
+    "pageHeight": 960,
+    "viewportWidth": 1706,
+    "width": 990.0000610351562,
+    "x": 358.3333435058594,
+    "y": 18
+  },
+  {
+    "page": "fenced",
+    "file": "06-fenced.jpg",
+    "height": 570.7000122070312,
+    "pageHeight": 960,
+    "viewportWidth": 1706,
+    "width": 990.0000610351562,
+    "x": 358.3333435058594,
+    "y": 18
+  },
+  {
+    "page": "fenced-pointer",
+    "file": "07-fenced-pointer.jpg",
+    "height": 570.7000122070312,
+    "pageHeight": 960,
+    "viewportWidth": 1706,
+    "width": 990.0000610351562,
+    "x": 358.3333435058594,
+    "y": 18
+  },
+  {
+    "page": "verify",
+    "file": "08-verification.jpg",
+    "height": 570.7000122070312,
+    "pageHeight": 960,
+    "viewportWidth": 1706,
+    "width": 990.0000610351562,
+    "x": 358.3333435058594,
+    "y": 18
+  }
+]

@@ -1,0 +1,39 @@
+
+Три сервера
+zk1: follower
+zk2: follower
+zk3: leader
+SET + GET: {"available": true, "readback": "Три сервера", "version": 4}
+STOP zk1: остановлены только процессы этого сервера
+
+Остановлен zk1: осталось 2/3
+zk1: offline
+zk2: follower
+zk3: leader
+SET + GET: {"available": true, "readback": "Остановлен zk1: осталось 2/3", "version": 5}
+STOP zk2: остановлены только процессы этого сервера
+
+Остановлены zk1, zk2: осталось 1/3
+zk1: offline
+zk2: offline
+zk3: not serving (no quorum)
+SET + GET: {"available": false, "exception": "KazooTimeoutError"}
+START zk1: PID 17312, штатная команда bin\zkServer.cmd
+START zk2: PID 52128, штатная команда bin\zkServer.cmd
+
+Оба сервера возвращены: 3/3
+zk1: follower
+zk2: follower
+zk3: leader
+SET + GET: {"available": true, "readback": "Оба сервера возвращены: 3/3", "version": 6}
+
+zkCli, сессия A: create -e /lab4-ephemeral-20261024183331 session-owner
+zkCli, сессия B: get -s /lab4-ephemeral-20261024183331
+[zk: 127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183(CONNECTED) 0] session-owner
+dataVersion = 0
+ephemeralOwner = 0x20005e957750002
+dataLength = 13
+zkCli, сессия A: quit (закрытие клиента)
+zkCli, сессия B: [zk: 127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183(CONNECTED) 0] Node does not exist: /lab4-ephemeral-20261024183331
+
+PASS: кворум и эфемерный узел

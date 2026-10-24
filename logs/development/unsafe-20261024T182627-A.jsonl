@@ -1,0 +1,6 @@
+{"time_utc": "2026-10-24T18:26:28.627+00:00", "monotonic_ns": 98755414293500, "pid": 46792, "coordinator": "A", "event": "started", "message": "Координатор запущен", "fencing": false, "requested_session_timeout_ms": 10000, "negotiated_session_timeout_ms": 10000, "session_id": "0x10005e20fcf0005"}
+{"time_utc": "2026-10-24T18:26:28.626+00:00", "monotonic_ns": 98755414038200, "pid": 46792, "coordinator": "A", "event": "session", "message": "Состояние сессии: CONNECTED", "state": "CONNECTED"}
+{"time_utc": "2026-10-24T18:26:28.628+00:00", "monotonic_ns": 98755415811400, "pid": 46792, "coordinator": "A", "event": "waiting", "message": "Ожидаю лидерство"}
+{"time_utc": "2026-10-24T18:26:28.648+00:00", "monotonic_ns": 98755436783900, "pid": 46792, "coordinator": "A", "event": "leader", "message": "Стал лидером", "epoch": 1, "epoch_version": 1}
+{"time_utc": "2026-10-24T18:26:28.659+00:00", "monotonic_ns": 98755446857200, "pid": 46792, "coordinator": "A", "event": "fresh", "message": "Начинаю расчёт с первой строки"}
+{"time_utc": "2026-10-24T18:26:29.756+00:00", "monotonic_ns": 98756542959500, "pid": 46792, "coordinator": "A", "event": "session", "message": "Состояние сессии: LOST", "state": "LOST"}

@@ -1,0 +1,162 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "criterion": "Three independent configs, data directories and myid files",
+      "passed": true
+    },
+    {
+      "criterion": "Initial roles: one leader, two followers",
+      "passed": true
+    },
+    {
+      "criterion": "One server stopped: read/write succeeds",
+      "passed": true
+    },
+    {
+      "criterion": "Two servers stopped: last process cannot serve requests",
+      "passed": true
+    },
+    {
+      "criterion": "Both servers restored, quorum returns",
+      "passed": true
+    },
+    {
+      "criterion": "Real zkCli ephemeral creation and session-close deletion",
+      "passed": true
+    },
+    {
+      "criterion": "unsafe-20261024T182821/A: negotiated 10-second session",
+      "passed": true
+    },
+    {
+      "criterion": "unsafe-20261024T182821/B: negotiated 10-second session",
+      "passed": true
+    },
+    {
+      "criterion": "unsafe-20261024T182821: paused real worker for 40+ seconds, no A events in pause",
+      "passed": true
+    },
+    {
+      "criterion": "unsafe-20261024T182821: checkpoint resumed at 20000 rows, failover measured",
+      "passed": true
+    },
+    {
+      "criterion": "FENCING=0: two accepted writes, pointer v2 from old leader",
+      "passed": true
+    },
+    {
+      "criterion": "fenced-20261024T182954/A: negotiated 10-second session",
+      "passed": true
+    },
+    {
+      "criterion": "fenced-20261024T182954/B: negotiated 10-second session",
+      "passed": true
+    },
+    {
+      "criterion": "fenced-20261024T182954: paused real worker for 40+ seconds, no A events in pause",
+      "passed": true
+    },
+    {
+      "criterion": "fenced-20261024T182954: checkpoint resumed at 20000 rows, failover measured",
+      "passed": true
+    },
+    {
+      "criterion": "FENCING=1: one accepted write, actual BadVersionError, standby pointer v1",
+      "passed": true
+    },
+    {
+      "criterion": "All four results match all bytes and frequencies of lab 3",
+      "passed": true
+    },
+    {
+      "criterion": "Stale epoch rejected even before standby publication",
+      "passed": true
+    },
+    {
+      "criterion": "Eight pages, eight distinct screenshots",
+      "passed": true
+    },
+    {
+      "criterion": "Original screenshot preserved: 01-roles.jpg",
+      "passed": true
+    },
+    {
+      "criterion": "Screenshot inside page and legible font: 01-roles.jpg",
+      "passed": true
+    },
+    {
+      "criterion": "Original screenshot preserved: 02-quorum.jpg",
+      "passed": true
+    },
+    {
+      "criterion": "Screenshot inside page and legible font: 02-quorum.jpg",
+      "passed": true
+    },
+    {
+      "criterion": "Original screenshot preserved: 03-ephemeral.jpg",
+      "passed": true
+    },
+    {
+      "criterion": "Screenshot inside page and legible font: 03-ephemeral.jpg",
+      "passed": true
+    },
+    {
+      "criterion": "Original screenshot preserved: 04-unsafe.jpg",
+      "passed": true
+    },
+    {
+      "criterion": "Screenshot inside page and legible font: 04-unsafe.jpg",
+      "passed": true
+    },
+    {
+      "criterion": "Original screenshot preserved: 05-unsafe-pointer.jpg",
+      "passed": true
+    },
+    {
+      "criterion": "Screenshot inside page and legible font: 05-unsafe-pointer.jpg",
+      "passed": true
+    },
+    {
+      "criterion": "Original screenshot preserved: 06-fenced.jpg",
+      "passed": true
+    },
+    {
+      "criterion": "Screenshot inside page and legible font: 06-fenced.jpg",
+      "passed": true
+    },
+    {
+      "criterion": "Original screenshot preserved: 07-fenced-pointer.jpg",
+      "passed": true
+    },
+    {
+      "criterion": "Screenshot inside page and legible font: 07-fenced-pointer.jpg",
+      "passed": true
+    },
+    {
+      "criterion": "Original screenshot preserved: 08-verification.jpg",
+      "passed": true
+    },
+    {
+      "criterion": "Screenshot inside page and legible font: 08-verification.jpg",
+      "passed": true
+    },
+    {
+      "criterion": "Both required questions answered in PDF",
+      "passed": true
+    },
+    {
+      "criterion": "No ZIP references, placeholders or broken glyphs in report",
+      "passed": true
+    },
+    {
+      "criterion": "Answers and final publication link present",
+      "passed": true
+    }
+  ],
+  "pdf_pages": 8,
+  "screenshots": 8,
+  "pdf_bytes": 1117974,
+  "pdf_sha256": "ea4273822dea236b4c1137fd3037bc2670921fc9832edd96c350cbf757cd85b3",
+  "visual_review": "All 8 rendered pages inspected; no cropped text, duplicate images or orphan pages."
+}

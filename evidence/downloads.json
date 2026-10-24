@@ -1,0 +1,16 @@
+[
+  {
+    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_x64_windows_hotspot_17.0.20.1_1.zip",
+    "file": "java17.zip",
+    "bytes": 190817615,
+    "sha256": "e53a79c3c3d86865bd7e787903884331068e71321714ffd44f145785affc7cb0",
+    "verified": true
+  },
+  {
+    "url": "https://downloads.apache.org/zookeeper/current/apache-zookeeper-3.9.6-bin.tar.gz",
+    "file": "zookeeper.tar.gz",
+    "bytes": 22901907,
+    "sha512": "e999626df06de30dc8bb53bb51da9bb786b1658406adafc6b92f104d72ca25e869f70a57c83a726f8b9558cc0fb519fc20f201aa5d6da09884bc4be5fe6dd3b0",
+    "verified": true
+  }
+]
