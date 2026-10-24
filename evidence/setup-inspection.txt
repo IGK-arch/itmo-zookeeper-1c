@@ -1,0 +1,15 @@
+JAVA_HOME=E:\projects\Инженерия данных\lab4-zookeeper\runtime\jdk-17.0.20.1+1
+java -version
+openjdk version "17.0.20.1" 2026-08-18
+OpenJDK Runtime Environment Temurin-17.0.20.1+1 (build 17.0.20.1+1)
+OpenJDK 64-Bit Server VM Temurin-17.0.20.1+1 (build 17.0.20.1+1, mixed mode, sharing)
+
+conf/zoo.cfg и data/myid трёх копий:
+zk1: myid=1, clientPort=2181, dataDir=../zk1/data
+zk2: myid=2, clientPort=2182, dataDir=../zk2/data
+zk3: myid=3, clientPort=2183, dataDir=../zk3/data
+
+Общий список участников:
+server.1=127.0.0.1:2888:3888
+server.2=127.0.0.1:2889:3889
+server.3=127.0.0.1:2890:3890

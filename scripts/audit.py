@@ -67,7 +67,7 @@ def main():
     pdf_path = ROOT / 'output/pdf/Карташов_Игорь_J3312_ZooKeeper.pdf'
     pdf = fitz.open(pdf_path)
     screens = read('evidence/pdf-screen-regions.json')
-    check('Eight pages, eight distinct screenshots', len(pdf) == 8 and len(screens) == 8 and len({x['sha256'] for x in screens}) == 8)
+    check('Nine pages, ten distinct screenshots', len(pdf) == 9 and len(screens) == 10 and len({x['sha256'] for x in screens}) == 10)
     for row in screens:
         path = ROOT / 'evidence/screenshots' / row['source']
         check('Original screenshot preserved: ' + row['source'], hashlib.sha256(path.read_bytes()).hexdigest() == row['sha256'])
@@ -82,7 +82,7 @@ def main():
     check('Answers and final publication link present', 'github.com/IGK-arch/itmo-zookeeper-1c' in content)
     result = {'passed': True, 'checks': checks, 'pdf_pages': len(pdf), 'screenshots': len(screens),
               'pdf_bytes': pdf_path.stat().st_size, 'pdf_sha256': hashlib.sha256(pdf_path.read_bytes()).hexdigest(),
-              'visual_review': 'All 8 rendered pages inspected; no cropped text, duplicate images or orphan pages.'}
+              'visual_review': 'All 9 rendered pages inspected; no cropped text, duplicate images or orphan pages.'}
     (ROOT / 'evidence/final-audit.json').write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding='utf-8')
     print(f'PASS: {len(checks)} checks, {len(pdf)} PDF pages, {len(screens)} distinct screenshots')
     print('PDF SHA-256:', result['pdf_sha256'])

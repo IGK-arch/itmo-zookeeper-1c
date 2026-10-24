@@ -15,10 +15,22 @@ PAGES = {
     'verify': ('Сверка с лабораторной 3', 'python scripts/verify_results.py', 'verification-commands.txt'),
     'unsafe-pointer': ('Указатель результата: FENCING=0', '', 'zkCli-pointer-unsafe.txt'),
     'fenced-pointer': ('Указатель результата: FENCING=1', '', 'zkCli-pointer-fenced.txt'),
+    'setup-process': ('Проверка Java, zoo.cfg и myid', 'python scripts/inspect_setup.py', 'setup-inspection.txt'),
 }
 
 
 def output_for(key):
+    if key == 'checkpoint-process':
+        experiment = json.loads((ROOT / 'evidence/experiments.json').read_text(encoding='utf-8'))[-2]
+        relative = f'logs/{experiment["run"]}-B.log'
+        # Verbatim lines from the actual coordinator: connection, election, restore,
+        # and two subsequent checkpoints. No generated terminal prompts.
+        lines = (ROOT / relative).read_text(encoding='utf-8').splitlines()
+        chosen = [line for line in lines if any(text in line for text in
+                  ('Координатор запущен', 'Ожидаю лидерство', 'Стал лидером',
+                   'Восстановлен чекпоинт', 'Чекпоинт сохранён'))][:6]
+        return ('Журнал запасного координатора B', relative, '\n'.join(chosen),
+                'Фрагмент журнала запуска: подключение, восстановление и продолжение расчёта')
     if key == 'roles':
         lines = []
         for node, value in roles().items():
@@ -51,7 +63,7 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_GET(self):
         key = self.path.strip('/') or 'roles'
-        if key not in PAGES and key != 'roles':
+        if key not in PAGES and key not in ('roles', 'checkpoint-process'):
             self.send_error(404)
             return
         title, command, output, source = output_for(key)

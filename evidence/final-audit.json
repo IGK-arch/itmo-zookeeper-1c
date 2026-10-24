@@ -74,7 +74,7 @@
       "passed": true
     },
     {
-      "criterion": "Eight pages, eight distinct screenshots",
+      "criterion": "Nine pages, ten distinct screenshots",
       "passed": true
     },
     {
@@ -99,6 +99,22 @@
     },
     {
       "criterion": "Screenshot inside page and legible font: 03-ephemeral.jpg",
+      "passed": true
+    },
+    {
+      "criterion": "Original screenshot preserved: 09-setup-process.jpg",
+      "passed": true
+    },
+    {
+      "criterion": "Screenshot inside page and legible font: 09-setup-process.jpg",
+      "passed": true
+    },
+    {
+      "criterion": "Original screenshot preserved: 10-checkpoint-process.jpg",
+      "passed": true
+    },
+    {
+      "criterion": "Screenshot inside page and legible font: 10-checkpoint-process.jpg",
       "passed": true
     },
     {
@@ -154,9 +170,9 @@
       "passed": true
     }
   ],
-  "pdf_pages": 8,
-  "screenshots": 8,
-  "pdf_bytes": 1117727,
-  "pdf_sha256": "3e6e2e904979ba2875f340f28a714337b66941fcffbc6b4c85dc965765074c66",
-  "visual_review": "All 8 rendered pages inspected; no cropped text, duplicate images or orphan pages."
+  "pdf_pages": 9,
+  "screenshots": 10,
+  "pdf_bytes": 1350781,
+  "pdf_sha256": "8b4956873c88ea5c16bab114f0a0963e00787b816f1803fbf67d2038dccd1e96",
+  "visual_review": "All 9 rendered pages inspected; no cropped text, duplicate images or orphan pages."
 }
