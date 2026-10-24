@@ -156,7 +156,7 @@
   ],
   "pdf_pages": 8,
   "screenshots": 8,
-  "pdf_bytes": 1117974,
-  "pdf_sha256": "ea4273822dea236b4c1137fd3037bc2670921fc9832edd96c350cbf757cd85b3",
+  "pdf_bytes": 1117727,
+  "pdf_sha256": "3e6e2e904979ba2875f340f28a714337b66941fcffbc6b4c85dc965765074c66",
   "visual_review": "All 8 rendered pages inspected; no cropped text, duplicate images or orphan pages."
 }
